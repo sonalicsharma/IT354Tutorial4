@@ -4,7 +4,7 @@ function validate() {
    var cardNumber=document.getElementById("cardValue").value;
    var numberOnly=/^[1-9]{1}[0-9]{12}([0-9]?){3}$/;  
    if (cardNumber==""||numberOnly.test(cardNumber)==false) {
-        document.getElementById("result").innerHTML ="Please Enter a valid credit card number";
+        document.getElementById("result").innerHTML ="Please enter a valid credit card number";
     } //close first if
     else{
         // The Luhn Algorithm

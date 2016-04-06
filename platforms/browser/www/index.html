@@ -10,6 +10,7 @@
     <!-- This is a wide open CSP declaration. To lock this down for production, see below. -->
     <meta http-equiv="Content-Security-Policy" content="style-src 'self' 'unsafe-inline'; media-src *; script-src 'self' 'unsafe-inline' 'unsafe-eval'" />
     <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <link rel="stylesheet" type="text/css" href="css/custom.css" />
     <link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.4.5.css" />  
     <script type="text/javascript" src="cordova.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
@@ -21,23 +22,20 @@
 <body>
     <div data-role="page" data-theme="b" id="Page1">
         
-        <div data-role="header" data-theme="b">
-            <img border="0" src="css/images/logo1.gif" width="40px" height="40px" alt="Logo, Facebook" style="float:left;display:inline"/>
-            
-            <h2>Card Validator</h2>
+        <div data-role="header" data-theme="b" data-position="fixed">  
+            <h2>Credit Card Validator</h2>
         </div>
         <div data-role="content" data-theme="b" id="Page1_content">
-            Enter credit card number:
-             </br>
-             </br>
-             <input style="text" id="value">
-            <button class="ui-btn ui-corner-all" onclick="check()">Check</button>
+            <label for="textinput1">Enter credit card number: </label>
+             
+             <input style="text" name="textinput1" id="cardValue" maxlength="16">
+            <button class="ui-btn ui-corner-all" onclick="validate()">VALIDATE</button>
             </br>
             <p id="result"></p>
             </br>
         </div>
         
-        <div data-role="footer" data-theme="b">
+        <div data-role="footer" data-theme="b" data-position="fixed">
             <h2>Copyright 2016</h2>
         </div>
     

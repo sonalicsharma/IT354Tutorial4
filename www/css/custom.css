@@ -1,15 +1,25 @@
-.logo
-{
+
+.ui-page .ui-header {
+    background-image:url(images/credit.jpg);
     width:100%;
-    background-color:#fff;
-    text-align:center;
-    padding:5px 0;
-}
-p{
-    padding:5px 0;
-    margin:0;
+    height:120px;
+    font-family:sans-serif;
+    text-align: justify;
+    letter-spacing: 1px;
+    height: 3em;
+    padding: 2em 0%;
+    font-size: 18px;
+    text-decoration: bold;
+    text-transform:uppercase; 
+   
     }
-.ui-header
-{
-    border-bottom:4px solid #FFCC00;
+body {
+ 
+ text-transform:none;
+ 
+}
+
+.ui-header .ui-title { 
+    margin-right: 0 !important;
+    margin-left: 0 !important;
 }
