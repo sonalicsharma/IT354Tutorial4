@@ -23,12 +23,13 @@
     <div data-role="page" data-theme="b" id="Page1">
         
         <div data-role="header" data-theme="b" data-position="fixed">  
-            <h2>Credit Card Validator</h2>
-        </div>
-        <div data-role="content" data-theme="b" id="Page1_content">
-            <label for="textinput1">Enter credit card number: </label>
+           <img border="0" src="css/images/logo1.gif" height="50px" class="ui-btn-left"/>
+           <a href="index.html" data-icon="grid" class="ui-btn-right">Options</a>
+            <h2>Card Validator</h2>
              
-             <input style="text" name="textinput1" id="cardValue" maxlength="16">
+        </div>
+        <div data-role="content" data-theme="b" id="Page1_content">  
+             <input style="text" name="textinput1" placeholder="Enter credit card number" id="cardValue" maxlength="16">
             <button class="ui-btn ui-corner-all" onclick="validate()">VALIDATE</button>
             </br>
             <p id="result"></p>
